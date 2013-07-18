@@ -41,6 +41,14 @@ Optionally, set up a key binding. I like to override Control-Shift-N in menu `Pr
 
 A template is simply a folder stored in `<sublime packages dir>/SublimeYeoman/Templates/`. It can contain any number and types of files and nested folders of files.
 
+## Setting up the build system
+
+Sublime populates its Tools/Build System menu based on the “.sublime-build” files stored in the Sublime “Packages” directory. 
+
+Should one need to locate this, it can be found in “~/Library/Application Support/Sublime Text 2/Packages/User” (if using OS X) or the corresponding Packages/User directory on other platforms. Copy and paste the `yeoman.sublime-build` file into Packages directory.
+
+Builds can be executed using a keyboard shortcut (Command+B on Mac is the default on Mac or F7 on Windows), via the Tools menu or when a file is saved. If a project is currently open, the build system we last selected (e.g grunt) will be remembered.
+
 ### Tokens
 
 Text files in the template may contain replaceable tokens in the form of `${{token_name}}`. When you create a new project, you will be prompted for values to use for each token found. The same token can be used multiple times in multiple files. You will only be prompted a single time for its value.
@@ -88,7 +96,7 @@ If the chosen template has a `.sublime-project` file in the top level, that file
 
 ## FAQ
 
-## What are the limitations of the current plugin?
+### What are the limitations of the current plugin?
 
 Sublime Yeoman currently ships with samples static templates for a number of different types of projects. These templates are the output of the corresponding Yeoman generators, however we eventually intend on shelling out to the `yo` binary to provide access to all Yeoman community generators.
 
