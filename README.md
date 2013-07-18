@@ -32,15 +32,11 @@ Optionally, set up a key binding. I like to override Control-Shift-N in menu `Pr
 
 ## Usage
 
-Invoking the command will show a Quick Panel list of available templates.
-
-Choose the template to base your project on.
-
-You will be prompted to enter a path for your new project. Do so.
-
-You will be prompted for values for any replaceable tokens in any template files or file names. Enter the values you want to use.
-
-Newly created project folder will open in system file manager.
+* Invoking "SublimeYeoman" from the command palette will show a Quick Panel list of available templates.
+* Choose the template to base your project on.
+* You will be prompted to enter a path for your new project. Do so.
+* You may be prompted for values for any replaceable tokens in any template files or file names. Enter the values you want to use.
+* Newly created project folder will be opened up in Sublime Text
 
 ## Creating and Modifying Templates
 
