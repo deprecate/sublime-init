@@ -5,7 +5,7 @@ class ProjectMakerCommand(sublime_plugin.WindowCommand):
 	def run(self):
 		settings = sublime.load_settings("yeoman.sublime-settings")
 		self.non_parsed = settings.get("non_parsed")
-		self.plugin_path = os.path.join(sublime.packages_path(), "sublime-yeoman")
+		self.plugin_path = os.path.join(sublime.packages_path(), "SublimeYeoman")
 		self.templates_path = os.path.join(self.plugin_path, "Templates")
 		self.template_names = []
 		self.choose_template()
