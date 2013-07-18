@@ -3,6 +3,8 @@ Sublime Yeoman
 
 A Sublime Text 2 plug-in to allow creating any kind of project from your own custom templates (based on the former [STProjectMaker](https://github.com/bit101/STProjectMaker)). Currently in alpha.
 
+Includes a `.sublime-build` file for running `npm install && bower install` for you once your project has been scaffolded.
+
 ![](https://f.cloud.github.com/assets/110953/819687/680e6e5e-efb6-11e2-869a-9ffedfb101e4.jpg)
 
 ## Currently includes templates for
@@ -14,9 +16,6 @@ A Sublime Text 2 plug-in to allow creating any kind of project from your own cus
 * RequireJS
 * WebApp
 
-## Limitations
-
-Sublime Yeoman currently ships with samples static templates for a number of different types of projects. These templates are the output of the corresponding Yeoman generators, however we eventually intend on shelling out to the `yo` binary to provide access to all Yeoman community generators.
 
 ## Installation
 
@@ -44,7 +43,7 @@ A template is simply a folder stored in `<sublime packages dir>/SublimeYeoman/Te
 
 ### Tokens
 
-Text files in the template may contain replaceable tokens in the form of `${token_name}`. When you create a new project, you will be prompted for values to use for each token found. The same token can be used multiple times in multiple files. You will only be prompted a single time for its value.
+Text files in the template may contain replaceable tokens in the form of `${{token_name}}`. When you create a new project, you will be prompted for values to use for each token found. The same token can be used multiple times in multiple files. You will only be prompted a single time for its value.
 
 Example:
 
@@ -87,7 +86,13 @@ Project path is `/foo/bar/baz/MyProject/`
 
 If the chosen template has a `.sublime-project` file in the top level, that file will be copied over and processed like any other file in the template. However, if this does not exist, a default `.sublime-project` file will be created using the `project_name` token as its base name. 
 
-### Ignored Files
+## FAQ
 
-Obviously, you don't want to try to do token replacement in binary files. The plug-in has a long list of file types that it will ignore when doing token replacement. You can always add your own if any files in your templates cause a problem. The list is contained in the `yeoman.sublime.sublime-settings` file. Note, these files _will_ be copied into the project. They will just not be parsed for tokens.
+## What are the limitations of the current plugin?
+
+Sublime Yeoman currently ships with samples static templates for a number of different types of projects. These templates are the output of the corresponding Yeoman generators, however we eventually intend on shelling out to the `yo` binary to provide access to all Yeoman community generators.
+
+### How do you ignore files?
+
+You don't want to try to do token replacement in binary files. The plug-in has a long list of file types that it will ignore when doing token replacement. You can always add your own if any files in your templates cause a problem. The list is contained in the `yeoman.sublime-settings` file. Note, these files _will_ be copied into the project. They will just not be parsed for tokens.
 
