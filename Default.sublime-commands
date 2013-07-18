@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "SublimeYeoman: Create project",
+        "command": "project_maker"
+    }
+]
