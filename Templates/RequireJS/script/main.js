@@ -1,37 +1,37 @@
-( function( window, Modernizr ) {
+(function(window, Modernizr) {
 
-	"use strict";
+    "use strict";
 
-	Modernizr.load( [
-		/*
+    Modernizr.load([
+        /*
 		{
 			test: Modernizr[testSomething],
 			yep: filesToLoad
 		},
 		*/
-		{
-			load: ['lib/require.js'],
-			callback: function( file ) {
-				/* handler on async loaded file. */
-			},
-			complete: function() {
+        {
+            load: ['lib/require.js'],
+            callback: function(file) {
+                /* handler on async loaded file. */
+            },
+            complete: function() {
 
-				define.amd.jQuery = true;
-				require.config({
-					baseUrl: '.',
-					paths: {
-						lib: './lib',
-						script: './script',
-						jquery: 'lib/jquery'
-					}
-				});
+                define.amd.jQuery = true;
+                require.config({
+                    baseUrl: '.',
+                    paths: {
+                        lib: './lib',
+                        script: './script',
+                        jquery: 'lib/jquery'
+                    }
+                });
 
-				require( ['jquery'], function( $ ) {
-					$('<p>AppRequireJS template for STProjectMaker.</p>').appendTo( $("#placeholder") );
-				});
-			}
-		}
-	]);
+                require(['jquery'], function($) {
+                    $('<p>AppRequireJS template for SublimeYeoman.</p>').appendTo($("#placeholder"));
+                });
+            }
+        }
+    ]);
 
 
-})( this, Modernizr );
+})(this, Modernizr);
