@@ -48,11 +48,11 @@ Text files in the template may contain replaceable tokens in the form of `${toke
 
 Example:
 
-	Hello from ${user_name}
+	Hello from ${{user_name}}
 
-when supplied a value of `Keith` for the `user_name` token will become:
+when supplied a value of `Paul` for the `user_name` token will become:
 
-	Hello from Keith
+	Hello from Paul
 
 ### Tokenized File Names
 
@@ -73,7 +73,7 @@ There are two predefined tokens:
 
 `${{project_path}}` in text files will be replaced by the absolute path of the new project directory.
 
-`${{project_name}` in text files or `_project_name_` as a file name will be replaced by the base name of the project directory.
+`${{project_name}}` in text files or `_project_name_` as a file name will be replaced by the base name of the project directory.
 
 Example:
 
