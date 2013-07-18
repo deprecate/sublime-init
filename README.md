@@ -7,7 +7,7 @@ Includes a `.sublime-build` file for running `npm install && bower install` for 
 
 ![](https://f.cloud.github.com/assets/110953/819687/680e6e5e-efb6-11e2-869a-9ffedfb101e4.jpg)
 
-## Currently includes templates for
+## Currently includes templates out of the box for
 
 * AngularJS
 * Backbone
@@ -15,6 +15,8 @@ Includes a `.sublime-build` file for running `npm install && bower install` for 
 * Chrome App
 * RequireJS
 * WebApp
+
+Templates are stored in the `/Templates` directory and can contain any arbitrary boilerplate you would like to use. We encourage the inclusion of [Grunt](http://gruntjs.com) (and a Gruntfile) for templates where possible.
 
 
 ## Installation
