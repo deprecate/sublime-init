@@ -114,6 +114,10 @@ If the chosen template has a `.sublime-project` file in the top level, that file
 
 Sublime Yeoman currently ships with samples static templates for a number of different types of projects. These templates are the output of the corresponding Yeoman generators, however we eventually intend on shelling out to the `yo` binary to provide access to all Yeoman community generators.
 
+### What about Sublime Text 3 support?
+
+We are currently evaluating the usefulness of this project through an alpha ST2 version being made available. If there is enough interest in an ST3 implementation, we will attempt to work on and support that too. 
+
 ### How do you ignore files?
 
 You don't want to try to do token replacement in binary files. The plug-in has a long list of file types that it will ignore when doing token replacement. You can always add your own if any files in your templates cause a problem. The list is contained in the `yeoman.sublime-settings` file. Note, these files _will_ be copied into the project. They will just not be parsed for tokens.
