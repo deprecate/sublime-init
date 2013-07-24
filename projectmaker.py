@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, os, shutil, re, subprocess
+import sublime, sublime_plugin, sys, os, shutil, re, subprocess
 from configuration import ConfigurationReader
 
 class ProjectMakerCommand(sublime_plugin.WindowCommand):
