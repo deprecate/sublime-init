@@ -1,6 +1,9 @@
 {
-    "working_dir": "${project_path}",
+    "working_dir": "${project_path:${folder}}",
     "path": "$HOME/bin:/usr/local/bin:$PATH",
-    "cmd": "npm install && bower install"
-}
+    "cmd": "npm install & bower install",
 
+    "windows": {
+        "cmd": "npm.cmd install & bower.cmd install"
+    }
+}
