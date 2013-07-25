@@ -31,6 +31,8 @@ Optionally, set up a key binding. I like to override Control-Shift-N in menu `Pr
 		{ "keys": ["ctrl+shift+n"], "command": "project_maker" }
 	]
 
+P.S : You need to restart your editor after installing the plugin.
+
 ## Usage
 
 Invoke "SublimeYeoman" from the command palette to show a Quick Panel list of available templates.
