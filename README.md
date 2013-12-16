@@ -124,3 +124,8 @@ We are currently evaluating the usefulness of this project through an alpha ST2 
 
 You don't want to try to do token replacement in binary files. The plug-in has a long list of file types that it will ignore when doing token replacement. You can always add your own if any files in your templates cause a problem. The list is contained in the `yeoman.sublime-settings` file. Note, these files _will_ be copied into the project. They will just not be parsed for tokens.
 
+
+## License
+
+[BSD license](http://opensource.org/licenses/bsd-license.php)
+Copyright (c) Google
