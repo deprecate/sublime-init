@@ -23,19 +23,65 @@ Templates are stored in the `/Templates` directory and can contain any arbitrary
 
 ### Manually:
 
-Clone or download this project into a folder named "SublimeYeoman" in your Sublime Text 2 Packages folder. If you're not sure where your Packages folder is, use menu `Preferences/Browse Packages...`
+There are two ways of installing sublime-init:
+#### Method 1:
+1. Create a folder named `SublimeYeoman` in the `Packages` folder for Sublime Text 2.
 
-Optionally, set up a key binding. I like to override Control-Shift-N in menu `Preferences/Key Bindings - User`
+   (If you're not sure where your Packages folder is, Go to: menu --> `Preferences/Browse Packages...`)
+
+    -or-
+
+    `{home}/Library/Application Support/Sublime Text 2/Packages/` is the defalt path on a MAC.
+    
+2. Clone or download this project into the folder `SublimeYeoman` that you have created.
+
+   The clone or download will create a folder named `sublime-init`.
+   
+3. Once the colne or download has completed proccede to the new folder `sublime-init`.
+
+   (`{home}/Library/Application Support/Sublime Text 2/Packages/SublimeYeoman/sublime-init`)
+   
+4. Select all the contents in the `sublime-init` folder and move them to the folder that you had created named `SublimeYeoman`.
+
+5. see P.S.
+
+#### Method 2:
+1. Clone or download `sublime-init` into your `Packages` folder. (see Method 1 if needing help locating this folder)
+
+2. Once clone or download is complete change the folder named `sublime-init` to `SublimeYeoman`.
+
+3. see P.S.
+
+##### P.S : You need to restart your editor after installing the plugin.
+
+#### To clone from command line:
+On MAC:
+
+1.Open Terminal or your application of choice.
+
+2.`$cd` into the `Packages` folder of Sublime Text 2.
+
+The Default path for Sublime Text 2 is `{home}/Library/Application Support/Sublime Text 2/Packages/`
+
+3. run this command:`$git https://github.com/yeoman/sublime-init.git`
+
+4. Follow steps from Method 1 -Step 3 or Method 2 -Step 2.
+
+
+
+#### Set up a key binding - (Optional) -
+I like to override Control-Shift-N
+
+Go to: menu --> `Preferences/Key Bindings - User`
 
 	[
 		{ "keys": ["ctrl+shift+n"], "command": "project_maker" }
 	]
 
-P.S : You need to restart your editor after installing the plugin.
-
 ## Usage
 
 Invoke "SublimeYeoman" from the command palette to show a Quick Panel list of available templates.
+Top Menu --> `Tools` --> `Command Palette` and start typing `SublimeYeoman`. If you used the optional `Key Binding` it will populate next to the Package name.
 
 ![screen shot 2013-07-18 at 16 17 17](https://f.cloud.github.com/assets/110953/820070/4c290c7e-efbd-11e2-9a0c-2eb4b4425d75.png)
 
