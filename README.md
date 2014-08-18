@@ -1,7 +1,12 @@
-Sublime Yeoman
-===================
+# Sublime Yeoman
 
-A Sublime Text 2 plug-in to allow creating any kind of project from your own custom templates (based on the former [STProjectMaker](https://github.com/bit101/STProjectMaker)). Currently in alpha.
+**This project is deprecated.**
+
+Check out [STProjectMaker](https://github.com/bit101/STProjectMaker) for a similar Sublime plugin, or use [Yeoman](http://yeoman.io) from the command-line.
+
+---
+
+A Sublime Text 2 plug-in to allow creating any kind of project from your own custom templates.
 
 Includes a `.sublime-build` file for running `npm install && bower install` for you once your project has been scaffolded.
 
